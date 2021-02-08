@@ -12,6 +12,7 @@ For each scenario, two agents are involved, one is the vehicle under test (VUT),
 
 ### The software interface
 <img src="resource/interface_full.png" alt="drawing" width="500"/>
+
 The GUI interface makes it easier for the user to run repeated simulation tests. All four test scenarios are supported. For all except the car-following, the usage is the following: 
 - The user may first choose difference scenarios for test; 
 - The number of test cases N can be specified; then the ratio of different challenge levels among all cases is determined using the scroll knobs;
