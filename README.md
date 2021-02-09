@@ -58,6 +58,10 @@ The GUI interface makes it easier for the user to run repeated simulation tests.
 
 If car-following test is selected, the only differences are on the left side of the GUI: the user may specify the initial speed of the POV, which will be the equalibrium car-following speed that the user wants to test.
 
+Here is a video showing the usage of the software.
+[![SampleRun](resource/video.png)](https://www.youtube.com/watch?v=v2iVXCJNu4o)
+
+
 ### Usage of the ZZZ platform
 The installation procedure of the ZZZ platform can be found in the offical repository shown above. The branch for this particular software is "challenge/carla_mcity". To use ZZZ, ROS is required. After downloading the ZZZ, please first use "catkin_make" to compile the ZZZ before following the instructions in the repo. 
 
