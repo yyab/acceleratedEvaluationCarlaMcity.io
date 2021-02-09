@@ -34,14 +34,24 @@ Where are the previous test results stored.
 We provide two options as the baseline controllers of the VUT. The first one is manual control, where the user may control the POV using the keyboard to experience the test case. The second one is called the ZZZ baseline, which is an open-source full-stack modular AV control platform and is available [here](https://gitlab.com/umvdl/zzz/zzz).
 
 ## Usage
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Usage of the software
+First, launch the Carla server with Mcity Map loaded in the Carla simulator folder with the command: 
+ ```bash
+ ./CarlaUE4.sh
+```
+Then, in the folder Accelerated_Evaluation_srunner, set up the environmental variables by:
+```bash
+ export CARLA_ROOT=YOUR CARLA ROOT
+ export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.9-py3.6-linux-x86_64.egg:${CARLA_ROOT}/PythonAPI/carla/agents:${CARLA_ROOT}/PythonAPI/carla
+```
+Finally, Start the software by
+```bash
+ python3 gui_main.py 
 
-```markdown
-Syntax highlighted code block
+```
 
-# Header 1
-## Header 2
-### Header 3
+### Usage of the ZZZ platform
+The installation procedure of the ZZZ platform can be found in the offical repository shown above. The branch for this particular software is "challenge/carla_mcity". To use ZZZ, ROS is required. After downloading the ZZZ, please first use "catkin_make" to compile the ZZZ before following the instructions in the repo. 
 
 - Bulleted
 - List
