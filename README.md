@@ -74,6 +74,7 @@ Code for each scenario: LC for lane change; LT for left turn; Ped for pedestrian
 
 ## Contacts 
 If you encounter any issue using the software, please contact Xinpeng Wang(xinpengw@umich.edu).
+
 <!-- - Bulleted
 - List
 
