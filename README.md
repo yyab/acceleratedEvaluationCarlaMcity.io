@@ -30,6 +30,7 @@ We provide two options as the baseline controllers of the VUT. The first one is 
 <img src="resource/interface_raw.png" alt="drawing" width="500"/>
 
 The GUI interface makes it easier for the user to run repeated simulation tests. All four test scenarios are supported. The user can launch the tests, monitor the test cases and results throught the GUI.
+
 ## Usage
 ### Usage of the software
 First, launch the Carla server with Mcity Map loaded in the Carla simulator folder with the command: 
@@ -46,10 +47,9 @@ Finally, Start the software by
  python3 gui_main.py 
 
 ```
+
 ### Usage of The software interface
 <img src="resource/interface_full.png" alt="drawing" width="500"/>
-
-The GUI interface makes it easier for the user to run repeated simulation tests. All four test scenarios are supported. For all except the car-following, the usage is the following: 
 1. The user may first choose difference scenarios for test; 
 2. The number of test cases N can be specified; then the ratio of different challenge levels among all cases is determined using the scroll knobs;
 3. To start scenario generation, press the "Run" button. To exit the programm anytime, press the "Stop" button.
@@ -65,6 +65,10 @@ Here is a video showing the usage of the software.
 ### Usage of the ZZZ platform
 The installation procedure of the ZZZ platform can be found in the offical repository shown above. The branch for this particular software is "challenge/carla_mcity". To use ZZZ, ROS is required. After downloading the ZZZ, please first use "catkin_make" to compile the ZZZ before following the instructions in the repo. 
 
+### Others
+After each test run, a csv file is generated in the "/Results" folder named "test_record_(code for each scenario)", which records the real-time relative distance (in x direction) and the speed of both POV and VUT. You can access this data for future analysis. 
+
+Code for each scenario: LC for lane change; LT for left turn; Ped for pedestrian crossing; CF for car-following.
 <!-- - Bulleted
 - List
 
