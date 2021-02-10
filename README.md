@@ -6,18 +6,18 @@ The goal of this work is to make the accelerated evaluation schemes and tools av
 
 ## Overview
 For each scenario, two agents are involved, one is the vehicle under test (VUT), which will be controlled by the baseline algorithms or the user's algorithm; the other is the primary other vehicle(POV)/pedestrian, whose behavior is designed and controlled to create a specific driving challenge to the VUT. For scenarios are considered in this tool: Lane change, pedestrian crossing, left turn and car following, as shown below.  
-<img src="resource/scenarios1.png" alt="drawing" width="700"/>
+<img src="resource/scenarios1.png" alt="drawing" width="600"/>
 
 ## Components
 ### The Mcity Map
 The challenge will be held inside the [Carla](https://carla.org/) virtual town of [Mcity](https://mcity.umich.edu/). Mcity is an 18-acre proving ground purposedly built for the testing of connected and automated vehicles, managed by the University of Michigan in Ann Arbor, Michigan. We built the Carla Mcity based on the true dimensions/layout of the real Mcity test facility, and it serves as just another virtual town for the Carla simulator. The supported Carla version is [0.9.9.4](https://github.com/carla-simulator/carla/tree/0.9.9.4). To learn more about the Carla simulator, please check out the [official documentations](https://carla.readthedocs.io/en/latest/).
-<img src="resource/Mcity11.png" alt="drawing" width="700"/>
-<img src="resource/Map.png" alt="drawing" width="700"/>
+<img src="resource/Mcity11.png" alt="drawing" width="600"/>
+<img src="resource/Map.png" alt="drawing" width="600"/>
 
 ### Test case sampling
 For each of the four scenario, test cases are defined with the following parameters which define the initial conditions,  where the bold ones are to be sampled by the software and the non-bold ones are to be determined by the user. For the first three scenarios, the software will sample test cases in the parameter space, which is decomposed into different challenge levels sets. To make sure all test cases are feasible and non-trivial for the VUT, Only cases in the high, medium and low challenge level sets will be tested. The ratio of test cases in each challenge level can be adjusted by the user.
 
-<img src="resource/case_generation.png" alt="drawing" width="700"/>
+<img src="resource/case_generation.png" alt="drawing" width="600"/>
 
 ### Simulation flow control
 The execution of test case simulation is based on [ScenarioRunner](https://github.com/carla-simulator/scenario_runner), a traffic scenario definition and an execution engine for CARLA. During the test simulation, the POV/pedestrian will adjust its speed and timing against the motion of the VUT in real time such that the set initial condition of test cases can be realized accurately. 
