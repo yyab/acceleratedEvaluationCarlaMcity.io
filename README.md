@@ -65,10 +65,15 @@ Here is a video showing the usage of the software.
 ### Usage of the ZZZ platform
 The installation procedure of the ZZZ platform can be found in the offical repository shown above. The branch for this particular software is "challenge/carla_mcity". To use ZZZ, ROS is required. After downloading the ZZZ, please first use "catkin_make" to compile the ZZZ before following the instructions in the repo. 
 
+To launch the ZZZ base algorithm from the software, please modify the zzz_start.bash file inside "/GUI" on line 3-8 based on the configurations of your computer. 
+
 ### Others
 After each test run, a csv file is generated in the "/Results" folder named "test_record_(code for each scenario)", which records the real-time relative distance (in x direction) and the speed of both POV and VUT. You can access this data for future analysis. 
 
 Code for each scenario: LC for lane change; LT for left turn; Ped for pedestrian crossing; CF for car-following.
+
+## Contacts 
+If you encounter any issue using the software, please contact Xinpeng Wang(xinpengw@umich.edu).
 <!-- - Bulleted
 - List
 
